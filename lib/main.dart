@@ -1,7 +1,6 @@
-import 'package:chatapp/helper_fucntions.dart';
-import 'package:chatapp/homepage.dart';
-import 'package:chatapp/signin.dart';
-import 'package:chatapp/signup.dart';
+import 'package:chatapp/models/helper_fucntions.dart';
+import 'package:chatapp/screens/homepage.dart';
+import 'package:chatapp/screens/signin.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 

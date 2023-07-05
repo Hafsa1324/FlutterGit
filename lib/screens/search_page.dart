@@ -1,7 +1,7 @@
-import 'package:chatapp/chat_screen.dart';
-import 'package:chatapp/constants.dart';
-import 'package:chatapp/db_services.dart';
-import 'package:chatapp/helper_fucntions.dart';
+import 'package:chatapp/screens/chat_screen.dart';
+import 'package:chatapp/models/constants.dart';
+import 'package:chatapp/firebase_services/db_services.dart';
+import 'package:chatapp/models/helper_fucntions.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
