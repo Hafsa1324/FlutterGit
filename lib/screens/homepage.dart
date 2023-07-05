@@ -1,11 +1,11 @@
-import 'package:chatapp/auth.dart';
-import 'package:chatapp/constants.dart';
-import 'package:chatapp/db_services.dart';
-import 'package:chatapp/group_tile.dart';
-import 'package:chatapp/helper_fucntions.dart';
-import 'package:chatapp/profile.dart';
-import 'package:chatapp/search_page.dart';
-import 'package:chatapp/signin.dart';
+import 'package:chatapp/firebase_services/auth.dart';
+import 'package:chatapp/models/constants.dart';
+import 'package:chatapp/firebase_services/db_services.dart';
+import 'package:chatapp/models/group_tile.dart';
+import 'package:chatapp/models/helper_fucntions.dart';
+import 'package:chatapp/screens/profile.dart';
+import 'package:chatapp/screens/search_page.dart';
+import 'package:chatapp/screens/signin.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 

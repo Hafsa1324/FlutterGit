@@ -1,8 +1,8 @@
-import 'package:chatapp/auth.dart';
-import 'package:chatapp/constants.dart';
-import 'package:chatapp/helper_fucntions.dart';
-import 'package:chatapp/homepage.dart';
-import 'package:chatapp/signin.dart';
+import 'package:chatapp/firebase_services/auth.dart';
+import 'package:chatapp/models/constants.dart';
+import 'package:chatapp/models/helper_fucntions.dart';
+import 'package:chatapp/screens/homepage.dart';
+import 'package:chatapp/screens/signin.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
@@ -105,7 +105,7 @@ class _SignUpState extends State<SignUp> {
                       onPressed: () async {
                         if (_formkey.currentState!.validate()){
                           setState(() {
-                            isLoading:true;
+                            isLoading=true;
                           });
                           await authSevice.signUp(fullname!,email,password,context).then((value)async{
                             if(value==true){

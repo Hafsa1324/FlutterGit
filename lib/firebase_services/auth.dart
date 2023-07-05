@@ -1,5 +1,5 @@
-import 'package:chatapp/db_services.dart';
-import 'package:chatapp/helper_fucntions.dart';
+import 'package:chatapp/firebase_services/db_services.dart';
+import 'package:chatapp/models/helper_fucntions.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 
@@ -7,9 +7,7 @@ class Auth{
   Future signIn(String email, password, context)async{
     try{
       User user=(await FirebaseAuth.instance.signInWithEmailAndPassword(email: email, password: password)).user!;
-      if(user!=null){
-        return true;
-      }
+      return true;
     }on FirebaseAuthException catch(e){
       return e.message;
     }
@@ -17,11 +15,9 @@ class Auth{
   Future signUp(String fullname, email, password, context)async{
     try{
       User user=(await FirebaseAuth.instance.createUserWithEmailAndPassword(email: email, password: password)).user!;
-      if(user!=null){
-        //but before we call our database services
+     //but before we call our database services
         await DatabaseService(uid: user.uid).saveUserData(email, fullname);
         return true;
-      }
     }on FirebaseAuthException catch(e){
       return e.message;
     }

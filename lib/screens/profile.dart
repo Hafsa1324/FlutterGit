@@ -1,7 +1,7 @@
-import 'package:chatapp/auth.dart';
-import 'package:chatapp/constants.dart';
-import 'package:chatapp/homepage.dart';
-import 'package:chatapp/signin.dart';
+import 'package:chatapp/firebase_services/auth.dart';
+import 'package:chatapp/models/constants.dart';
+import 'package:chatapp/screens/homepage.dart';
+import 'package:chatapp/screens/signin.dart';
 import 'package:flutter/material.dart';
 
 class Profile extends StatefulWidget {
